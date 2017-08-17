@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+exec 2>&1
+source /etc/conf.d/svnserve
+exec /usr/bin/svnserve --daemon $SVNSERVE_ARGS
